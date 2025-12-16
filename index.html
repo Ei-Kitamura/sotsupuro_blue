@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>英単語4択アプリ</title>
+
+  <!-- レスポンシブ対応 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>英単語クイズ</h1>
+
+    <!-- 問題番号 -->
+    <div id="questionNumber"></div>
+
+    <!-- 問題 -->
+    <div id="question"></div>
+
+    <!-- 選択肢 -->
+    <div id="choices">
+      <button class="choice" onclick="checkAnswer(0)"></button>
+      <button class="choice" onclick="checkAnswer(1)"></button>
+      <button class="choice" onclick="checkAnswer(2)"></button>
+      <button class="choice" onclick="checkAnswer(3)"></button>
+    </div>
+
+    <!-- 正解・不正解 -->
+    <div id="result"></div>
+
+    <!-- 次へボタン -->
+    <button id="nextBtn" onclick="nextQuestion()">次の問題</button>
+  </div>
+
+  <small>© Ei Kitamura 2025(卒業プロジェクト実験_blue)</small>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
